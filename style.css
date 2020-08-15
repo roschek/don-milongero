@@ -190,7 +190,6 @@ ul {
     overflow: hidden;
     text-overflow: ellipsis;
     padding: 20px;
-    align-items: left;
     text-decoration: none;
     color: black;
 }
@@ -226,7 +225,10 @@ ul {
 }
 
 .video__element {
+    display: block;
+    max-width: 560px;
     border-radius: 20px;
+    margin: 40px auto 40px auto;
 }
 
 .popup {
@@ -311,5 +313,11 @@ ul {
     }
     .video__element {
         margin: 20px auto;
+    }
+    .registration {
+        margin: 30px auto;
+        border-radius: 50px;
+        padding: 20px;
+        font-size: 24px;
     }
 }
