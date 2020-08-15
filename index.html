@@ -124,6 +124,16 @@
                                 дальше."
                             </p>
                         </a>
+                        <a href="https://vk.com/topic-7817529_39567337" target="_blank" class="swiper-slide swiper-slide-2 ">
+                            <h3 class="card__title">Любовь Антакова:</h3>
+                            <p class="card__text">"Мне очень очень нравится эта школа. Красиво все, начиная от расположения и заканчивая профессионализмом. Особенно уютный зал, вкусный кофе и добрые учителя. Это место знакомства, дружбы и подъема жизненной энергии."</p>
+                        </a>
+                        <a href="https://vk.com/topic-7817529_39567337" target="_blank" class="swiper-slide swiper-slide-2">
+                            <h3 class="card__title">Дмитрий Ключанский:</h3>
+                            <p class="card__text">"Очень рад тому, что есть такое место как клуб Дон Милонгеро. Но еще больше рад тому, что могу проводить там время. С удовольствием хожу на занятия и милонги. Там всегда рады тебя видеть, учить, да и просто болтать обо всем.
+                                Там очень уютно. Рекомендую всем наш клуб. "
+                            </p>
+                        </a>
                     </div>
                     <div class="swiper-button-prev swiper-button"></div>
                     <!-- Add Pagination -->
@@ -140,7 +150,7 @@
                 </div>
             </section>
             <aside><button class="registration open-price">Узнать цены</button></aside>
-            <aside><button class="registration reg-bttn">Запишитесь на урок</button></aside>
+
         </main>
 
         <!--попап с ценами-->
@@ -167,17 +177,17 @@
                 <img src="./images/close.svg" alt="" class="popup__close popup-form__close">
                 <div class="popup__wrapper">
                     <h3 class="about__title about__title-white">Запишитесь на урок</h3>
-                    <form id="form-sign" name="form-sign" class="form">
+                    <form id="form-sign" action="check.php" method="POST" name="form-sign" class="form">
                         <div class='form__wrapper'>
-                            <input name="form-name" type="text" class="form__input input__name">
+                            <input name="form-name" type="text" class="form__input input__name" required>
                             <div class="placeholder">Ваше ФИО</div>
                         </div>
                         <div class='form__wrapper'>
-                            <input name="form-tel" type="tel" class="form__input input__tel">
+                            <input name="form-tel" type="tel" class="form__input input__tel" required>
                             <div class="placeholder">телефон</div>
                         </div>
                         <div class='form__wrapper'>
-                            <input name="form-mail" type="email" class="form__input input__mail">
+                            <input name="form-mail" type="email" class="form__input input__mail" required>
                             <div class="placeholder">электронная почта</div>
                         </div>
                         <button type="submit" class="form__submit">Хочу учиться танцевать</button>
@@ -185,7 +195,14 @@
                 </div>
             </div>
         </div>
-        <footer></footer>
+        <footer class=footer>
+            <span class="copyright">&copy; Alexey Roschektaev</span>
+            <div class="adress">
+                <span class="adress__text">наш телефон:123-45-67</span>
+                <span class="adress__text">Адрес:Буэнос айрес</span>
+                <span class="adress__text">e-mail: godoy@vezde.com</span>
+            </div>
+        </footer>
     </div>
 
 

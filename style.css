@@ -1,4 +1,5 @@
 @import url('./blocks/form.css');
+@import url('./blocks/footer.css');
 * {
     box-sizing: border-box;
 }
@@ -313,6 +314,7 @@ ul {
         flex-direction: column;
     }
     .video__element {
+        width: 80%;
         margin: 20px auto;
     }
     .registration {
