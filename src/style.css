@@ -1,0 +1,378 @@
+@import url('./blocks/form.css');
+@import url('./blocks/footer.css');
+@import url('./blocks/arrow.css');
+@import url('./blocks/swiper.css');
+@font-face {
+    font-family: 'pragmatica';
+    src: url('./vendor/pragmatica-cyrillic.ttf');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+f
+/*основные стили*/
+
+td {
+    border: 1px solid grey;
+}
+
+table {
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'pragmatica', arial;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/*шапка*/
+
+.arrow__up {
+    position: relative;
+    margin: 0 auto;
+    margin-left: auto;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.arrow__up:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    padding-top: 200px;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-around;
+}
+
+.logo {
+    max-width: 200px;
+    object-fit: contain;
+    padding-left: 20px;
+}
+
+.nav__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    transition: .6s;
+}
+
+.link:hover {
+    transform: scale(1.1, 1.1);
+    font-weight: bold;
+}
+
+.header__pic {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    padding: 200px;
+    margin: 0 auto;
+}
+
+.main__logo {
+    max-width: 400px;
+    margin: 0.1em auto;
+}
+
+.main__arrow-link {
+    bottom: 20px;
+    position: relative;
+    margin: 0 auto;
+    margin-left: auto;
+    max-width: 200px;
+    max-height: 200px;
+    transition: .1s;
+}
+
+.arrow__img {
+    margin-top: 40px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.header__title {
+    margin: 0 auto;
+}
+
+
+/* блок слайдера*/
+
+.gallery {
+    width: 100%;
+    margin: 20px 0;
+    padding: 0;
+}
+
+.swiper-container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-items: baseline;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 600px;
+    max-height: 300px;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.swiper-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: baseline;
+}
+
+.about__title {
+    text-align: center;
+    font-size: 64px;
+    margin: 50px auto;
+}
+
+.about__subtitle {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 20px auto;
+}
+
+.about__text {
+    max-width: 960px;
+    text-align: justify;
+    font-size: 18px;
+    margin: 50px auto;
+}
+
+.registration {
+    margin: 50px auto;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    display: block;
+    color: white;
+    padding: 40px;
+    font-size: 32px;
+    background: rgb(143, 63, 63);
+    cursor: pointer;
+    transition: .5s;
+    outline: none;
+}
+
+.registration:hover {
+    box-shadow: inset 0 0 4px 2px;
+}
+
+
+/*второй слайдер с отзывами*/
+
+.swiper-slide-2 {
+    padding: 20px;
+    min-width: 400px;
+    text-decoration: none;
+    color: black;
+    border-radius: 30px;
+    overflow: hidden;
+    max-height: 200px;
+}
+
+.swiper-slide-2:hover {
+    box-shadow: 0 0 10px 5px grey;
+}
+
+.swiper-button {
+    position: absolute;
+}
+
+.card__title {
+    text-align: left;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.card__text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.video__content {
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(560px, 1fr));
+    margin: 0 auto;
+}
+
+.video__element {
+    margin: 40px;
+    display: block;
+    width: 560px;
+    border-radius: 20px;
+}
+
+.video__element-content {
+    margin: 40px auto 40px auto;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 10;
+    transition: 1s;
+    display: none;
+}
+
+.is__active {
+    display: block;
+}
+
+.about__title-white {
+    margin-top: 40px;
+    color: black;
+}
+
+.about__text-white {
+    color: black;
+}
+
+.popup__content {
+    position: relative;
+    max-width: 900px;
+    margin: 10% auto;
+    padding: 20px;
+}
+
+.popup__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.popup__wrapper {
+    padding: 50px;
+    border-radius: 30px;
+    background-color: lavender;
+    width: 98%;
+    opacity: 1;
+    z-index: 20;
+}
+
+.map {
+    display: block;
+    max-width: 560px;
+    margin: 30px auto;
+}
+
+@media screen and (max-width:880px) {
+    .wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .main__logo {
+        max-width: 200px;
+    }
+    .header__pic {
+        width: 80%;
+        padding: 0;
+        margin: 40px auto;
+    }
+    .main__arrow-link {
+        max-width: 100px;
+        max-height: 100px;
+        padding-bottom: 40px;
+        left: 5%;
+    }
+    .about__title {
+        font-size: 32px;
+    }
+    .about__subtitle {
+        font-size: 18px;
+    }
+    .about__text {
+        font-size: 16px;
+    }
+    .swiper-slide-2 {
+        min-width: 260px;
+    }
+    .swiper-slide {
+        min-width: 70%;
+    }
+    .video__content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .video__element {
+        width: 80%;
+        margin: 20px auto;
+    }
+    .registration {
+        margin: 30px auto;
+        border-radius: 50px;
+        padding: 20px;
+        font-size: 24px;
+    }
+    .timetable {
+        width: 90%;
+        font-size: 14px;
+    }
+    .popup__content {
+        margin: 20px auto;
+        padding: 20px;
+    }
+    .popup__wrapper {
+        padding: 10px;
+        border-radius: 30px;
+        background-color: lavender;
+        width: 90%;
+        opacity: 200;
+        z-index: 20;
+    }
+    .about__shedule {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .map {
+        max-width: 320px;
+        max-height: 320px;
+    }
+    .form__input {
+        padding: 5px;
+    }
+}

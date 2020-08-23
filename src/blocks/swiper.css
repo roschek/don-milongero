@@ -1,0 +1,29 @@
+.swiper-pagination {
+    width: 100px;
+    height: 20px;
+    top: 150px;
+    left: 50px;
+    z-index: 50;
+}
+
+.swiper-button-prev {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    top: 150px;
+    outline: none;
+    z-index: 70;
+    left: -10px;
+}
+
+.swiper-button-next {
+    position: absolute;
+    right: 10px;
+    z-index: 70;
+    width: 20px;
+    display: block;
+    height: 20px;
+    outline: none;
+    top: 150px;
+}
