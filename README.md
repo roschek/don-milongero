@@ -1,3 +1,3 @@
-# mesto
-проект для курса Yandex.practikum, технологии HTML, CSS, JS<br>
-<a href="https://roschek.github.io/mesto/">зайти на сайт</a>
+для установки: git clone</br>
+установить зависимости npm i</br>
+запустить сервер npm run dev
